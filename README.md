@@ -122,3 +122,5 @@ To run this project, you'll need to add the following environment variables to y
 GEMINI_API_KEY=your_gemini_api_key
 SERP_API_KEY=your_serp_api_key
 ```
+
+Last updated: 2026-10-13 16:03 UTC
