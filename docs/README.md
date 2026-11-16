@@ -3,7 +3,6 @@
 This directory contains technical documentation for the AI Competitor Analysis application.
 
 ## Reading order
-
 1. [Installation](installation.md): prepare Node.js, npm, and local environment.
 2. [Configuration](configuration.md): configure Gemini and SerpAPI credentials.
 3. [Architecture](architecture.md): understand the Next.js pages, UI components, store, and server routes.
@@ -30,5 +29,4 @@ This directory contains technical documentation for the AI Competitor Analysis a
 | [Limitations](limitations.md) | Known gaps and future improvements |
 
 ## Scope note
-
-Documentation describes the current checked-in code. It distinguishes the current implementation from recommendations and future work. The application has no configured database, automated collection scheduler, model evaluation framework, or end-to-end test suite. Do not infer these capabilities from roadmap suggestions.
+Documentation describes the current checked-in code. It distinguishes the current implementation from recommendations and future work. The application has no configured database, automated collection scheduler, model evaluation framework, or end-to-end test suite.
