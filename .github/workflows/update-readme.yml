@@ -23,22 +23,41 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Verify documented local targets
+      - name: Verify documentation files
         run: |
-          test -f PDS_PROJECT.ipynb || true
-          test -f results\ \(1\).csv
-          test -f docs/README.md
-          test -f docs/installation.md
-          test -f docs/configuration.md
-          test -f docs/architecture.md
-          test -f docs/api.md
-          test -f docs/data-and-exports.md
-          test -f docs/security.md
-          test -f docs/scraping.md
-          test -f docs/development.md
-          test -f docs/testing.md
-          test -f docs/deployment.md
-          test -f docs/troubleshooting.md
-          test -f docs/faq.md
-          test -f docs/limitations.md
-          echo "Required documentation targets exist."
+          python - <<'PY'
+          from pathlib import Path
+
+          required = [
+              "docs/README.md",
+              "docs/user-guide.md",
+              "docs/installation.md",
+              "docs/configuration.md",
+              "docs/architecture.md",
+              "docs/architecture-decisions.md",
+              "docs/api.md",
+              "docs/api-examples.md",
+              "docs/provider-integrations.md",
+              "docs/data-and-exports.md",
+              "docs/data-dictionary.md",
+              "docs/database.md",
+              "docs/security.md",
+              "docs/privacy.md",
+              "docs/scraping.md",
+              "docs/development.md",
+              "docs/testing.md",
+              "docs/accessibility.md",
+              "docs/performance.md",
+              "docs/deployment.md",
+              "docs/operations.md",
+              "docs/release-process.md",
+              "docs/troubleshooting.md",
+              "docs/faq.md",
+              "docs/known-ui-issues.md",
+              "docs/limitations.md",
+          ]
+          missing = [path for path in required if not Path(path).is_file()]
+          if missing:
+              raise SystemExit("Missing documentation files:\n" + "\n".join(missing))
+          print(f"Verified {len(required)} documentation files.")
+          PY
