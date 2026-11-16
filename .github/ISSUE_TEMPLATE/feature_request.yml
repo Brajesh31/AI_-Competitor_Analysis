@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest a scoped improvement to competitor research or analysis.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or user need
+      description: What limitation or workflow should this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe expected behavior and affected pages or API routes.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: How should the result be tested?
+    validations:
+      required: true
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Data and provider considerations
+      options:
+        - label: This request does not require publishing credentials, private research, or unauthorized scraped content.
+          required: true
