@@ -28,15 +28,16 @@ jobs:
           python - <<'PY'
           import re
           from pathlib import Path
+          from urllib.parse import unquote
 
           root = Path(".")
           readme = (root / "README.md").read_text(encoding="utf-8")
-          targets = re.findall(r"\[[^\]]+\]\(([^)]+)\)", readme)
+          targets = re.findall(r"\[[^\]]+\]\(<?([^)>]+)>?(?:\s+[^)]*)?\)", readme)
           broken = []
           for target in targets:
               if target.startswith(("https://", "http://", "mailto:", "#")):
                   continue
-              target_path = target.split("#", 1)[0]
+              target_path = unquote(target.split("#", 1)[0])
               if target_path and not (root / target_path).exists():
                   broken.append(target)
           if broken:
