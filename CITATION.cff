@@ -1,18 +1,18 @@
 cff-version: 1.2.0
-title: "AI Competitor Analysis"
-message: "If you use this software, please cite the repository."
+message: "If you use this software, please cite it as below."
 type: software
+title: "AI Competitor Analysis"
 authors:
   - family-names: Kumar
     given-names: Brajesh
-    affiliation: "Independent"
-repository-code: "https://github.com/brajesh31/AI_-Competitor_Analysis"
-abstract: "A Next.js application for AI-assisted competitor relationship research and analysis."
-keywords:
-  - Next.js
-  - competitive intelligence
-  - generative AI
-  - web research
-license: MIT
 version: 0.1.0
-date-released: 2025-01-01
+date-released: 2026-11-16
+repository-code: "https://github.com/Brajesh31/AI_-Competitor_Analysis"
+license: MIT
+abstract: "A Next.js application for AI-assisted competitor relationship research and analysis using public search sources and generative AI."
+keywords:
+  - competitive intelligence
+  - competitor research
+  - Next.js
+  - generative AI
+  - web search
