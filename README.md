@@ -281,21 +281,31 @@ The CI workflow installs dependencies, runs a TypeScript check, and creates a pr
 
 ## Documentation
 
+The [documentation index](docs/README.md) links to the complete technical guides.
+
 | Guide | Description |
 |---|---|
-| [Documentation index](docs/README.md) | Complete guide directory |
+| [User guide](docs/user-guide.md) | End-to-end application workflow |
 | [Installation](docs/installation.md) | Local setup and runtime |
 | [Configuration](docs/configuration.md) | Environment variables and secrets |
 | [Architecture](docs/architecture.md) | Pages, components, state and API flow |
-| [API reference](docs/api.md) | Routes, payloads and error behavior |
-| [Data and exports](docs/data-and-exports.md) | Source records, result shape and CSV |
+| [API reference](docs/api.md) | Routes, payloads and errors |
+| [API examples](docs/api-examples.md) | Curl examples for each endpoint |
+| [Provider integrations](docs/provider-integrations.md) | Search and AI provider behavior |
+| [Data and exports](docs/data-and-exports.md) | Result schema and CSV behavior |
+| [Data dictionary](docs/data-dictionary.md) | Fields and provenance gaps |
 | [Security](docs/security.md) | API security and operational safeguards |
+| [Privacy](docs/privacy.md) | Data flows and retention considerations |
 | [Scraping](docs/scraping.md) | Source constraints and extraction risks |
-| [Development](docs/development.md) | Local development workflow |
+| [Development](docs/development.md) | Development workflow |
 | [Testing](docs/testing.md) | CI and manual test strategy |
-| [Deployment](docs/deployment.md) | Production build and hosting considerations |
-| [Troubleshooting](docs/troubleshooting.md) | Common runtime issues |
-| [FAQ](docs/faq.md) | Frequently asked questions |
+| [Accessibility](docs/accessibility.md) | Accessibility review and checklist |
+| [Performance](docs/performance.md) | Runtime and optimization considerations |
+| [Deployment](docs/deployment.md) | Production build and hosting |
+| [Operations](docs/operations.md) | Provider checks and incident triage |
+| [Release process](docs/release-process.md) | Release validation and rollback |
+| [Troubleshooting](docs/troubleshooting.md) | Common issues |
+| [Known UI behavior](docs/known-ui-issues.md) | Demo content and incomplete interface elements |
 | [Limitations](docs/limitations.md) | Known technical debt |
 
 ## Contributing
