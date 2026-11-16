@@ -1,0 +1,34 @@
+name: Bug report
+description: Report a reproducible defect in the application or API.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Search existing issues first. Never include API keys, personal data, or confidential company research."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include route/page, input shape, and steps using non-sensitive example data.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, operating system, Node.js version, and npm version where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized error output
+      description: Remove credentials, personal information, and private research data.
