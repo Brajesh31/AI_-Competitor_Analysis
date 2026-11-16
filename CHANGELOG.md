@@ -5,6 +5,10 @@ Notable repository changes are recorded here. This project does not currently us
 ## Unreleased
 
 ### Added
+- End-to-end user guide and curl examples for all API endpoints.
+- Provider integration reference for DuckDuckGo, Google News, SerpAPI, and Gemini.
+- Operations runbook, privacy guide, data dictionary, database/storage guide, accessibility review, and performance notes.
+- Architecture decision notes, known UI behavior inventory, and release process checklist.
 - Expanded technical documentation for installation, configuration, architecture, API routes, data/export behavior, scraping, security, development, testing, deployment, troubleshooting, FAQ, and limitations.
 - Repository issue templates for bugs, feature requests, and documentation requests.
 - CI workflow for dependency installation, TypeScript validation, and production build.
