@@ -1,6 +1,9 @@
 # Testing and validation
 
 ## Automated checks
+
+GitHub Actions also runs CodeQL static analysis for JavaScript/TypeScript on pushes, pull requests, and a weekly schedule. CodeQL results depend on repository security-analysis availability and do not replace dependency review or runtime testing.
+
 The repository CI workflow is intended to run npm dependency installation using the committed lockfile, TypeScript static checking with `npx tsc --noEmit`, and a Next.js production build using `npm run build`. These checks do not call external search providers or Gemini.
 
 ## Manual feature checks
