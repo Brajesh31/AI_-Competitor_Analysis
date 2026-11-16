@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Project documentation
+    url: https://github.com/Brajesh31/AI_-Competitor_Analysis/tree/main/docs
+    about: Review installation, API, security, and scraping guidance before opening an issue.
