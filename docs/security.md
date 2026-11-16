@@ -18,5 +18,8 @@ Some routes log scraped HTML, full URLs, and model responses. These logs can rev
 ## Rate limits and cost controls
 Gemini and SerpAPI may incur usage charges and impose quota limits. Add request throttling, timeouts, maximum result counts, and cost monitoring. Scraper endpoints should use bounded concurrency and respect source policies.
 
+## Static analysis
+The repository includes a CodeQL workflow for JavaScript/TypeScript analysis. Static analysis can identify some code-level weaknesses, but it does not prove the application is secure and does not replace dependency updates, runtime validation, secret management, or manual review.
+
 ## Reporting
 For vulnerability reporting, follow [SECURITY.md](../SECURITY.md). Do not publish working secrets or personal/business-confidential research data in public issues.
